@@ -1,22 +1,15 @@
-.d-flex {
+// Flexbox
+.flex {
     display: flex;
-}
-
-.d-flex-column {
-    display: flex;
-    flex-direction: column;
-}
-
-.jc-c {
-    justify-content: center;
-}
-
-.jc-sb {
-    justify-content: space-between;
-}
-
-.ai-c {
-    align-items: center;
+    &-jc-sb {
+        justify-content: space-between;
+    }
+    &-jc-c {
+        justify-content: center;
+    }
+    &-ai-c {
+        align-items: center;
+    }
 }
 
 .primary-font {
@@ -31,11 +24,64 @@
     font-family: $third-font;
 }
 
-.container {
-    width: 95%;
-    margin: 0 auto;
-}
-
 .normal-fz {
     font-size: $normal-fz;
+}
+
+// Visibility
+.hide-for-mobile {
+    @include breakpoint-down(medium) {
+        display: none;
+    }
+}
+
+.hide-for-desktop {
+    @include breakpoint-up(large) {
+        display: none;
+    }
+}
+
+.container {
+    max-width: 95%;
+    margin: 0 auto;
+    &--pall {
+        padding-top: 2.375rem;
+        padding-right: 1.5rem;
+        padding-bottom: 2.375rem;
+        padding-left: 1.5rem;
+        @include breakpoint-up(large) {
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+        }
+    }
+    &--py {
+        padding-top: 4.375rem;
+        padding-bottom: 4.375rem;
+        @include breakpoint-up(large) {
+            padding-top: 6rem;
+            padding-bottom: 6rem;
+        }
+    }
+    &--px {
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
+    }
+    &--pt {
+        padding-top: 4.375rem;
+        @include breakpoint-up(large) {
+            padding-top: 6rem;
+        }
+    }
+    &--pr {
+        padding-right: 1.5rem;
+    }
+    &--pb {
+        padding-bottom: 4.375rem;
+        @include breakpoint-up(large) {
+            padding-bottom: 6rem;
+        }
+    }
+    &--pl {
+        padding-left: 1.5rem;
+    }
 }

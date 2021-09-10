@@ -55,7 +55,7 @@ span.secondary-font {
 }
 
 p {
-    color: $secondary-color-blue;
+    color: $grayishBlue;
     font-size: $normal-fz; //36px
     @include breakpoint-down(semimedium) {
         font-size: 0.875rem;
@@ -72,5 +72,4 @@ a:link,
 a:active,
 a:visited {
     text-decoration: none;
-    color: $primary-color-dark;
 }
