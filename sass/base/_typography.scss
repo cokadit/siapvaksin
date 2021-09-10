@@ -1,0 +1,76 @@
+%header {
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: NeuePlak;
+    src: url("../../fonts/NeuePlak.ttf");
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url("../../fonts/Montserrat-Regular.ttf");
+}
+
+@font-face {
+    font-family: Montserrat-italic;
+    src: url("../../fonts/Montserrat-Italic.ttf");
+}
+
+$primary-font: NeuePlak;
+$secondary-font: Montserrat;
+$third-font: Montserrat-italic;
+h1,
+h1 * {
+    &::selection {
+        background-color: $primary-color-white;
+        color: $primary-color-dark;
+    }
+    color: $primary-color-dark;
+    font-size: $large-fz; //150px
+    @extend %header;
+}
+
+h2 {
+    font-size: $big-fz; //110rem
+    @extend %header;
+}
+
+h4 {
+    color: $primary-color-dark;
+    font-size: $small-fz; //20px
+    @extend %header;
+}
+
+h5 {
+    font-size: $verysmall-fz; //18px
+    @extend %header;
+    @include breakpoint-down(medium) {
+        font-size: 0.75rem;
+    }
+}
+
+span.secondary-font {
+    font-family: $secondary-font;
+}
+
+p {
+    color: $secondary-color-blue;
+    font-size: $normal-fz; //36px
+    @include breakpoint-down(semimedium) {
+        font-size: 0.875rem;
+    }
+}
+
+*::selection {
+    background-color: $primary-color-white;
+    color: $primary-color-dark;
+}
+
+a,
+a:link,
+a:active,
+a:visited {
+    text-decoration: none;
+    color: $primary-color-dark;
+}

@@ -1,0 +1,22 @@
+{
+  "name": "siapvaksin",
+  "version": "1.0.0",
+  "description": "web untuk lomba intech 2021 ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cokadit/siapvaksin.git"
+  },
+  "author": "agung aditya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cokadit/siapvaksin/issues"
+  },
+  "homepage": "https://github.com/cokadit/siapvaksin#readme",
+  "dependencies": {
+    "sass": "^1.39.2"
+  }
+}

@@ -1,0 +1,41 @@
+.d-flex {
+    display: flex;
+}
+
+.d-flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.jc-c {
+    justify-content: center;
+}
+
+.jc-sb {
+    justify-content: space-between;
+}
+
+.ai-c {
+    align-items: center;
+}
+
+.primary-font {
+    font-family: $primary-font;
+}
+
+.secondary-font {
+    font-family: $secondary-font;
+}
+
+.third-font {
+    font-family: $third-font;
+}
+
+.container {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.normal-fz {
+    font-size: $normal-fz;
+}
