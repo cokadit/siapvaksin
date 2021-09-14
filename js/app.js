@@ -11,7 +11,10 @@ $(window).load(function() {
             opacity: "toggle"
         }, 300);
     });
+
+
 });
+
 
 btnHamburger.addEventListener('click', function() {
     console.log('click hamburger');
