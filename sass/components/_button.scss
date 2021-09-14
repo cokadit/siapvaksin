@@ -1,17 +1,23 @@
 button,
 .button {
+    text-align: center;
     position: relative;
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 0.875rem 2.1875rem;
     background-color: $darkBlue;
     border: 0;
-    border-radius: 50px;
+    border-radius: 10px;
     cursor: pointer;
     color: $primary-color-white;
     font-weight: 400;
     font-size: $verysmall-fz;
-    transition: opacity 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
     overflow: hidden;
+    &>:first-child {
+        margin-right: .5rem;
+    }
     &::before {
         content: "";
         position: absolute;
@@ -21,9 +27,38 @@ button,
         left: 0;
         background-color: rgba(255, 255, 255, 0.25);
         opacity: 0;
-        transition: opacity 150ms ease-in-out;
+        transition: all 150ms ease-in-out;
+    }
+    &:hover {
+        transform: translateY(-10px);
+        transition: all 200ms ease-in;
+        box-shadow: 1px 23px 21px -2px rgba(223, 231, 255, 0.75);
     }
     &:hover::before {
         opacity: 1;
+    }
+    &--secondary {
+        text-align: center;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.875rem 2.1875rem;
+        background-color: transparent;
+        border: 2px solid $darkBlue;
+        border-radius: 10px;
+        cursor: pointer;
+        color: $darkBlue;
+        font-weight: 400;
+        font-size: $verysmall-fz;
+        transition: all 300ms ease-in-out;
+        overflow: hidden;
+        &:hover {
+            background-color: $darkBlue;
+            color: $primary-color-white;
+            transform: translateY(-10px);
+            transition: all 200ms ease-in;
+            box-shadow: 1px 23px 21px -2px rgba(223, 231, 255, 0.75);
+        }
     }
 }

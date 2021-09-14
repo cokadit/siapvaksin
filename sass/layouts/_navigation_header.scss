@@ -1,6 +1,8 @@
 .header {
-    position: relative;
-    z-index: 1;
+    position: fixed;
+    width: 100vw;
+    z-index: 100;
+    box-shadow: 1px 10px 15px -2px rgba(223, 231, 255, 0.5);
     // Hamburger Open Styles
     &.open {
         .header__toggle {
@@ -85,7 +87,7 @@
                 height: 5px;
                 left: 0;
                 right: 0;
-                bottom: -30px;
+                bottom: -1.563vw;
                 background: linear-gradient(to right, $darkBlue, $blue);
                 opacity: 0;
                 transition: opacity 300ms ease-in-out;

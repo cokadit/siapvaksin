@@ -32,3 +32,14 @@ $breakpoints-down: ( "sxsmall":"19.9375em", "xsmall": "23.375em", "small": "26.5
         @content;
     }
 }
+
+@mixin cf {
+    &::before,
+    &::after {
+        content: '';
+        display: table;
+    }
+    &::after {
+        clear: both;
+    }
+}

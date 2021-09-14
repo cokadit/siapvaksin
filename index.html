@@ -10,13 +10,14 @@
     <link rel="icon" type="image/svg" href="img/logo.svg" />
     <!-- con -->
     <link rel="stylesheet" href="sass/main.css">
+    <link href="fontawesome/css/all.css" rel="stylesheet">
 </head>
 
 <body>
     <header class="header">
         <div class="overlay has-fade"></div>
 
-        <nav class="container container--pall flex flex-jc-sb flex-ai-c">
+        <nav class=" container--pall flex flex-jc-sb flex-ai-c">
             <a href="/" class="header__logo">
                 <img src="img/logo_text.svg" alt="SiapVaksin" />
             </a>
@@ -41,7 +42,182 @@
         </div>
 
     </header>
+    <main>
+        <div class="hero">
+            <section class="hero__section flex ">
+                <div class="container hero__section__left container--py-1 container--px">
+                    <h1 class="hero__section__header">Lindungi anda dan orang sekitar dengan menjalankan program <span class="underline-text">Vaksinasi COVID-19</span></h1>
+                    <p class="hero__section__p">Temukan vasilitas kesehatan yang menyediakan Vaksin COVID 19 dan dapatkan vaksin anda segera</p>
+                    <div class="hero__section__button flex">
+                        <a class="button button__cta">Dapatkan Vaksin</a>
+                        <a class="button--secondary button_help">Help Center</a>
+                    </div>
+                </div>
+                <div class="hero__section__right">
+                    <img src="img/hero_bg-3.svg" alt="hero image" class="hero__image hero__image--1">
+                    <img src="img/Shield.svg" alt="hero image" class="hero__image hero__image--2">
+                    <img src="img/hero_circle.svg" alt="hero image" class="hero__image hero__image--3">
+                    <img src="img/hero_doc.png" alt="hero image" class="hero__image hero__image--4">
+                </div>
 
+            </section>
+        </div>
+
+        <!-- pencarian status vaksin -->
+        <div class="hero__section__status glass__effect flex_col">
+            <h4 class="hero__section__status__title flex flex-jc-c flex-ai-c">Periksa Status Anda Dalam Program Vaksinasi COVID-19</h4>
+            <div class="hero__section__status__input__wrapper flex flex-jc-sb">
+                <input type="text" placeholder="Nama lengkap anda" class="input hero__section__status__input--1 hero__section__status__input--1">
+                <input type="text" placeholder="NIK anda" class="input hero__section__status__input--1 hero__section__status__input--1">
+                <a href="#" class="button button--cari">
+                    <i class="fas fa-search"></i> Cari
+                </a>
+            </div>
+        </div>
+        <!-- close---pencarian status vaksin -->
+
+        <!-- Vasilitas terdekat -->
+        <div class="vasilitas__section__virus--img">
+            <img src="img/corona-blue.svg" alt="" srcset="" class="v-img--2">
+            <img src="img/corona-blue.svg" alt="" srcset="" class="v-img float-r r-180">
+        </div>
+        <div class="vasilitas">
+            <section class="vasilitas__section">
+
+                <div class="vasilitas__section__title__wrapper">
+                    <img src="img/dot.svg" alt="" class="dot">
+                    <h1 class="vasilitas__section__title"><span class="">Temukan</span> Fasilitas Kesehatan yang Melayani <span class="underline-text">Vaksinasi COVID-19</span></h1>
+                </div>
+                <div class="vasilitas__section__search__wrapper flex flex-ai-c flex-jc-c">
+                    <input type="text" class="input--1 vasilitas__section__input" placeholder="Nama klinik/Puskesmas/Kecamatan">
+                    <a href="#" class="button button--cari">
+                        <i class="fas fa-search"></i> Cari
+                    </a>
+                </div>
+
+            </section>
+
+            <!-- Rumah sakit terdekat card -->
+            <div class="vasilitas__section__card flex flex-jc-c">
+
+                <div class="column ">
+                    <!-- Post-->
+                    <div class="post-module">
+                        <!-- Thumbnail-->
+                        <div class="thumbnail">
+                            <div class="jarak">
+                                <div class="jarak__icon"><i class="fas fa-map-marker-alt"></i></div>
+                                <div class="month">5 KM</div>
+                            </div>
+                            <img src="img/hospital-1.jpg" />
+                        </div>
+                        <!-- Post Content-->
+                        <div class="post-content flex_col ">
+                            <h4 class="title ">Rumah Sakit Puri Raharja</h4>
+                            <p class="sub_title">Jl. W.R Supratman No 14 & 19 Denpasar Bali</p>
+                            <a href="#" class="button a-self-c">Dapatkan Vaksin</a>
+                            <div class="post-meta flex flex-jc-sb">
+                                <p class="kuota"><i class="fas fa-user-alt"></i> 10/50 Tersedia</p>
+                                <p class="jenis_vaksin"><i class="fas fa-syringe"></i> Sinovac</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column">
+
+                    <div class="post-module">
+                        <div class="thumbnail">
+                            <div class="jarak">
+                                <div class="jarak__icon"><i class="fas fa-map-marker-alt"></i></div>
+                                <div class="month">6 KM</div>
+                            </div>
+                            <img src="img/hospital-2.jpg" />
+                        </div>
+                        <!-- Post Content-->
+                        <div class="post-content flex_col ">
+                            <h4 class="title ">Rumah Sakit Prima Medika</h4>
+                            <p class="sub_title">Jl. Raya Sesetan No.10, Dauh Puri Klod, Kec. Denpasa</p>
+                            <a href="#" class="button a-self-c">Dapatkan Vaksin</a>
+                            <div class="post-meta flex flex-jc-sb">
+                                <p class="kuota"><i class="fas fa-user-alt"></i> 15/50 Tersedia</p>
+                                <p class="jenis_vaksin"><i class="fas fa-syringe"></i> Sinovac</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column ">
+                    <!-- Post-->
+                    <div class="post-module">
+                        <!-- Thumbnail-->
+                        <div class="thumbnail">
+                            <div class="jarak">
+                                <div class="jarak__icon"><i class="fas fa-map-marker-alt"></i></div>
+                                <div class="month">8 KM</div>
+                            </div>
+                            <img src="img/hospital-3.jpg" />
+                        </div>
+                        <!-- Post Content-->
+                        <div class="post-content flex_col ">
+                            <h4 class="title ">Rumah Sakit Sanglah</h4>
+                            <p class="sub_title">Jl. Diponegoro, Dauh Puri Klod, Kec. Denpasar Bar., Kota Denpasar, Bali</p>
+                            <a href="#" class="button a-self-c">Dapatkan Vaksin</a>
+                            <div class="post-meta flex flex-jc-sb">
+                                <p class="kuota"><i class="fas fa-user-alt"></i> 25/50 Tersedia</p>
+                                <p class="jenis_vaksin"><i class="fas fa-syringe"></i> Sinovac</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column ">
+                    <!-- Post-->
+                    <div class="post-module">
+                        <!-- Thumbnail-->
+                        <div class="thumbnail">
+                            <div class="jarak">
+                                <div class="jarak__icon"><i class="fas fa-map-marker-alt"></i></div>
+                                <div class="month">8.2 KM</div>
+                            </div>
+                            <img src="img/hospital-4.jpg" />
+                        </div>
+                        <!-- Post Content-->
+                        <div class="post-content flex_col ">
+                            <h4 class="title ">Rumah Sakit Bhayangkara</h4>
+                            <p class="sub_title">2F, Jl. Trijata No.32, Sumerta Kelod, Kec. Denpasar Utara, Kota Denpasar, Bali</p>
+                            <a href="#" class="button a-self-c">Dapatkan Vaksin</a>
+                            <div class="post-meta flex flex-jc-sb">
+                                <p class="kuota"><i class="fas fa-user-alt"></i> 40/50 Tersedia</p>
+                                <p class="jenis_vaksin"><i class="fas fa-syringe"></i> Sinovac</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Close--Rumah sakit terdekat card -->
+
+        </div>
+        <!-- Close -- Vasilitas terdekat -->
+        <div class="blue-background--half-circle"></div>
+        <div class="blue-background">
+            <img src="img/dot-2.svg" alt="dot" class="dot--2">
+            <img src="img/corona.svg" alt="corona" srcset="" class="v-img float-r">
+            <section class="container faq flex">
+                <div class="faq__image">
+                    <img src="img/faq_bg.png" alt="" class="faq__image__bg">
+                    <!-- <img src="img/faq_doc.png" alt="" class="faq__image__doc"> -->
+                </div>
+                <div class="faq__content">
+                    <h1 class="faq__title">Hal-hal yang harus dilakukan sebelum melakukan <span class="underline-text">Vaksinasi COVID-19</span></h1>
+                </div>
+            </section>
+            <section class="contact"></section>
+        </div>
+    </main>
+
+    <script type="module" src="js/jquery-3.6.0.min.js"></script>
     <script type="module" src="js/app.js"></script>
 </body>
 

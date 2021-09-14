@@ -1,0 +1,26 @@
+.faq {
+    background-image: url(../../img/line-background-for-blue-bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+    padding-top: 20rem;
+    &__image {
+        position: relative;
+        flex: 1 0 50%;
+        &__bg {
+            height: 90vh;
+            margin: 2rem;
+        }
+        &__doc {
+            height: 90vh;
+            position: absolute;
+            bottom: 0;
+            left: 6vw;
+        }
+    }
+    &__content {
+        flex: 1 0 50%;
+        flex-wrap: wrap;
+    }
+    &__title {}
+}

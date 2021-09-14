@@ -12,6 +12,24 @@
     }
 }
 
+.flex_col {
+    display: flex;
+    flex-direction: column;
+    &-jc-sb {
+        justify-content: space-between;
+    }
+    &-jc-c {
+        justify-content: center;
+    }
+    &-ai-c {
+        align-items: center;
+    }
+}
+
+.a-self-c {
+    align-self: center;
+}
+
 .primary-font {
     font-family: $primary-font;
 }
@@ -26,6 +44,14 @@
 
 .normal-fz {
     font-size: $normal-fz;
+}
+
+.float-r {
+    float: right;
+}
+
+.r-180 {
+    transform: rotate(180deg);
 }
 
 // Visibility
@@ -57,14 +83,22 @@
     &--py {
         padding-top: 4.375rem;
         padding-bottom: 4.375rem;
+        &-1 {
+            padding-top: 10rem;
+            padding-bottom: 10rem;
+            @include breakpoint-down(small) {
+                padding-top: 8rem;
+                padding-bottom: 10rem;
+            }
+        }
         @include breakpoint-up(large) {
             padding-top: 6rem;
             padding-bottom: 6rem;
         }
     }
     &--px {
-        padding-right: 1.5rem;
-        padding-left: 1.5rem;
+        padding-right: 2rem;
+        padding-left: 2rem;
     }
     &--pt {
         padding-top: 4.375rem;
@@ -84,4 +118,46 @@
     &--pl {
         padding-left: 1.5rem;
     }
+}
+
+.underline-text {
+    background-image: linear-gradient(120deg, $yellow 0%, #ffc400 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.2em;
+    background-position: 0 88%;
+}
+
+// .dot {
+//     background-image: url(../../img/dot.svg);
+//     background-repeat: no-repeat;
+//     background-size: 2vw;
+//     background-position: 0% 0%;
+// }
+.dot {
+    margin: 0 20%;
+    width: 3rem;
+}
+
+.dot--2 {
+    transform: translate(50vw, 20vw);
+    width: 3rem;
+}
+
+.blue-background--half-circle {
+    background-color: $lightBlue;
+    width: 100%;
+    height: 20rem;
+    border-radius: 100% 100% 0 0;
+    // transform: translateY(-30rem);
+    margin-top: -30rem;
+    z-index: -1;
+    position: relative;
+}
+
+.blue-background {
+    background-color: $lightBlue;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    position: relative;
 }
