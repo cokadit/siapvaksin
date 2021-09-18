@@ -24,8 +24,8 @@ $third-font: Montserrat-italic;
 h1,
 h1 * {
     &::selection {
-        background-color: $primary-color-white;
-        color: $primary-color-dark;
+        background-color: $primary-color-dark;
+        color: $primary-color-white;
     }
     color: $primary-color-dark;
     font-size: $large-fz; //48px
@@ -38,6 +38,9 @@ h1 * {
 h2 {
     font-size: $big-fz;
     @extend %header;
+    @include breakpoint-down(medium) {
+        font-size: 1.4rem;
+    }
 }
 
 h4 {

@@ -1,0 +1,38 @@
+.contact {
+    margin-top: 10rem;
+    z-index: 1;
+    &__content {
+        flex-wrap: wrap;
+        @include breakpoint-down(medium) {
+            flex-direction: column;
+        }
+        &__left {
+            flex: 0 0 50%;
+        }
+        &__title {
+            padding-left: 2rem;
+        }
+        &__paragraph {
+            padding: 2rem 0 0 2rem;
+        }
+        &__right {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex: 1;
+        }
+    }
+    &__image {
+        position: relative;
+        // flex: 1 0 10%;
+        &__bg {
+            height: 45vw;
+            margin: 2rem;
+            @include breakpoint-down(medium) {
+                height: 70vw;
+                bottom: 0;
+                right: 0;
+            }
+        }
+    }
+}

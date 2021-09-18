@@ -1,0 +1,105 @@
+.emergency-number {
+    width: 90%;
+    margin: 0 auto;
+    padding: 1.2rem 4rem;
+    background-color: $darkBlue;
+    margin-top: -7rem;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    text-align: center;
+    @include breakpoint-down(small) {
+        flex-direction: column;
+    }
+    &__icon {
+        padding: 1rem;
+        border: 2px solid $lightBlue;
+        border-radius: 20px;
+        transition: all 200ms ease-in;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+        @include breakpoint-down(small) {
+            margin-top: 1rem;
+        }
+        &>:first-child {
+            color: $primary-color-white;
+            padding: .8rem;
+            background-color: $blue;
+            border-radius: 20px;
+            margin-right: .5rem;
+        }
+        &>span {
+            color: $primary-color-white;
+            font-weight: 600;
+        }
+        &:hover {
+            background-color: $lightBlue;
+            border: 2px solid $lightBlue;
+            transform: translateY(-.5rem);
+            transition: all 200ms ease-in-out;
+            &>span {
+                color: $blue;
+            }
+        }
+    }
+}
+
+.footer {
+    width: 100%;
+    height: 100%;
+    margin: 8rem 0 3rem 0;
+    text-align: center;
+    &__logo {
+        img {
+            width: 8.8125rem;
+            height: 1.375rem;
+        }
+    }
+    &__paragraph {
+        margin-top: 1rem;
+        width: 30%;
+        color: $grayishBlue;
+        opacity: 50%;
+        font-weight: 100;
+    }
+    &__links {
+        text-align: center;
+        margin-top: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 70%;
+        flex-wrap: wrap;
+        @include breakpoint-down(semimedium) {
+            justify-content: center;
+        }
+        &__item {
+            padding: 2rem;
+            color: $grayishBlue;
+            position: relative;
+            transition: color 300ms ease-in-out;
+            &::before {
+                content: "";
+                display: block;
+                position: absolute;
+                height: 5px;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: linear-gradient(to right, $darkBlue, $blue);
+                opacity: 0;
+                transition: opacity 300ms ease-in-out;
+            }
+            &:hover {
+                color: $darkBlue;
+                &::before {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

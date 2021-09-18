@@ -20,6 +20,12 @@
                 position: relative;
                 z-index: -2;
             }
+            @include breakpoint-up(xsmall) {
+                margin-top: 30vh;
+            }
+            @include breakpoint-up(semimedium) {
+                margin-top: 0vh;
+            }
         }
         &__header {
             max-width: 80%;

@@ -143,6 +143,11 @@
     width: 3rem;
 }
 
+.dot--3 {
+    transform: translate(35vw, 2vw);
+    width: 3rem;
+}
+
 .blue-background--half-circle {
     background-color: $lightBlue;
     width: 100%;
@@ -150,6 +155,18 @@
     border-radius: 100% 100% 0 0;
     // transform: translateY(-30rem);
     margin-top: -30rem;
+    z-index: -1;
+    position: relative;
+}
+
+.blue-background--half-circle-2 {
+    background-color: $lightBlue;
+    transform: rotate(180deg);
+    width: 100%;
+    height: 20rem;
+    border-radius: 100% 100% 0 0;
+    // transform: translateY(-30rem);
+    margin-top: 0rem;
     z-index: -1;
     position: relative;
 }
@@ -162,6 +179,5 @@
     background-position: 0 0;
     width: 100%;
     height: 100%;
-    z-index: -1;
     position: relative;
 }

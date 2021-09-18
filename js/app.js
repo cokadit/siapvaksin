@@ -4,16 +4,6 @@ const header = document.querySelector('.header');
 const overlay = document.querySelector('.overlay');
 const fadeElems = document.querySelectorAll('.has-fade');
 
-$(window).load(function() {
-    $('.post-module').hover(function() {
-        $(this).find('.description').stop().animate({
-            height: "toggle",
-            opacity: "toggle"
-        }, 300);
-    });
-
-
-});
 
 
 btnHamburger.addEventListener('click', function() {
